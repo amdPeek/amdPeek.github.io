@@ -107,7 +107,7 @@
 	<div class="content" id="navigation">
       <div class="navi_elem"><a href="index.html">News</a></div>
       <div class="navi_elem"><a href="about.html">About</a></div>
-      <div class="navi_elem"><a href="https://github.com/TheoManea">@GitHub</a></div>
+      <div class="navi_elem"><a href="https://github.com/amdPeek">@GitHub</a></div>
    </div>
    </center>
 
@@ -116,7 +116,7 @@
       <h3>About me</h3>
       
       <div id="avatar">
-         <img style="width:60%;" src="bear.jpeg"/>
+         <img style="width:60%;" src="images/bear.jpeg"/>
          <p>Awesome bear isn't it ?</p>
       </div>
 
@@ -131,7 +131,7 @@
       I also have  experience with languages such as Python, Ocaml, C/C++, php, Unix shell, assembly languages.</p>
 
       <p>I have released several open source projects, some more complete than others,
-      which you can find either here or on <a href="https://github.com/TheoManea">GitHub</a>.
+      which you can find either here or on <a href="https://github.com/amdPeek">GitHub</a>.
       
 
       <p>My operating system of choice is Linux (I often switch between Ubuntu,Debian or Kali distros), however, I try to make sure that my software works on Windows, Mac OS X and the various BSDs as well.</p>
@@ -150,8 +150,14 @@
    </div>
 
    <div id="copyright">
-      <p>Copyright (C) Manea Théo - 2022 <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>  </p>
+      <p>Copyright (C) Manea Théo - <span id="year"></span> <p>Date/Time: <span id="datetime"></span></p>
+      <script>
+         var dt = new Date();
+         document.getElementById("datetime").innerHTML=dt.toLocaleString(); 
+         var currentYear = dt.getFullYear();
+         document.getElementById("year").innerHTML=currentYear; 
+      </script>  
+      </p>
    </div>
 
   

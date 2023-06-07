@@ -5,93 +5,93 @@
       <link href="style.css" rel="stylesheet" type="text/css">
       <title>Théo Manea</title>
 	  <style>
-body {
-   background: #999999;
-   margin: 10px;
-   padding: 10px;
+      body {
+         background: #999999;
+         margin: 10px;
+         padding: 10px;
 
-   font-family: Verdana, sans-serif;
-   width: 780px;
-   margin-left: auto;
-   margin-right: auto;
-}
+         font-family: Verdana, sans-serif;
+         width: 780px;
+         margin-left: auto;
+         margin-right: auto;
+      }
 
-.content {
-   margin: 5px;
-   padding: 10px;
-   background: #eeeeee;
-   border: 2px solid #ccccff;
-}
+      .content {
+         margin: 5px;
+         padding: 10px;
+         background: #eeeeee;
+         border: 2px solid #ccccff;
+      }
 
-#title {
-   padding-left: 20px;
-}
+      #title {
+         padding-left: 20px;
+      }
 
-#sub_title {
-   padding-right: 10px;
-   text-align: right;
-}
+      #sub_title {
+         padding-right: 10px;
+         text-align: right;
+      }
 
-#navigation {
-   padding-left: 5%;
-   padding-right: 5%;
-}
+      #navigation {
+         padding-left: 5%;
+         padding-right: 5%;
+      }
 
-#inner_navi {
-}
+      #inner_navi {
+      }
 
-.navi_elem {
-   display: inline-table;
-   border: 1px black solid;
-   padding: 5px;
-   margin-right: 10px;
-   background: #eeeeff;
-   width: 10%;
-   text-align: center;
-}
+      .navi_elem {
+         display: inline-table;
+         border: 1px black solid;
+         padding: 5px;
+         margin-right: 10px;
+         background: #eeeeff;
+         width: 10%;
+         text-align: center;
+      }
 
-hr {
-   color: black;
-}
+      hr {
+         color: black;
+      }
 
-hr.text {
-   color: white;
-}
+      hr.text {
+         color: white;
+      }
 
-a:link {
-   color: blue;
-}
+      a:link {
+         color: blue;
+      }
 
-a:hover {
-   color: purple;
-}
+      a:hover {
+         color: purple;
+      }
 
-a:visited {
-   color: purple;
-}
+      a:visited {
+         color: purple;
+      }
 
-a {
-   text-decoration: none;
-}
+      a {
+         text-decoration: none;
+      }
 
-#avatar {
-   float: right;
-   margin: 15px;
-   font-size: 0.7em;
-   text-align: right;
-}
+      #avatar {
+         float: right;
+         margin: 15px;
+         font-size: 0.7em;
+         text-align: right;
+      }
 
-#copyright {
-   font-size: 0.8em;
-   background: #eeeeee;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-top: 1px;
-   padding-bottom: 1px;
-   border: 2px solid #ccccff;
-   margin: 5px;
-   text-align: right;
-}
+      #copyright {
+         font-size: 0.8em;
+         background: #eeeeee;
+         padding-left: 10px;
+         padding-right: 10px;
+         padding-top: 1px;
+         padding-bottom: 1px;
+         border: 2px solid #ccccff;
+         margin: 5px;
+         text-align: right;
+      }
 
 	  </style>
    </head>
@@ -110,7 +110,7 @@ a {
 	<div class="content" id="navigation">
       <div class="navi_elem"><a href="index.html">News</a></div>
       <div class="navi_elem"><a href="about.html">About</a></div>
-      <div class="navi_elem"><a href="https://github.com/TheoManea">@GitHub</a></div>
+      <div class="navi_elem"><a href="https://github.com/amdPeek">@GitHub</a></div>
    </div>
    </center>
    
@@ -119,11 +119,11 @@ a {
 
       <hr class="text"/>
       <h4>2023-01-15</h4>
-      <p>A simple doom replica. Made with c++/OpenGl<a href="game.html">Take a look here</a> </p>
+      <p>A simple doom replica. Made with c++/OpenGl <a href="articles/game.html">Take a look here</a> </p>
 
       <hr class="text"/>
       <h4>2022-12-15</h4>
-      <p>The 2048 game. A simple and flat GUI which allows to play 2048 on your computer :  <a href="2048.html">Take a look here</a> </p>
+      <p>The 2048 game. A simple and flat GUI which allows to play 2048 on your computer :  <a href="articles/2048.html">Take a look here</a> </p>
 
    
       <hr class="text"/>
@@ -135,8 +135,14 @@ a {
 
 
    <div id="copyright">
-      <p>Copyright (C) Manea Théo - 2022 <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>  </p>
+      <p>Copyright (C) Manea Théo - <span id="year"></span> <p>Date/Time: <span id="datetime"></span></p>
+      <script>
+         var dt = new Date();
+         document.getElementById("datetime").innerHTML=dt.toLocaleString(); 
+         var currentYear = dt.getFullYear();
+         document.getElementById("year").innerHTML=currentYear; 
+      </script>  
+      </p>
    </div>
 
 

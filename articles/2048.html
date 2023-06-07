@@ -96,7 +96,7 @@
    <body>
 
    <div class="content" id="title">
-      <h1>Simple DOOM</h1>
+      <h1>2048</h1>
       <div id="sub_title">
          <h4>//articles</h4>
       </div>
@@ -105,34 +105,40 @@
 
    <center>
 	<div class="content" id="navigation">
-      <div class="navi_elem"><a href="index.html">News</a></div>
-      <div class="navi_elem"><a href="about.html">About</a></div>
-      <div class="navi_elem"><a href="https://github.com/TheoManea">@GitHub</a></div>
+      <div class="navi_elem"><a href="../index.html">News</a></div>
+      <div class="navi_elem"><a href="../about.html">About</a></div>
+      <div class="navi_elem"><a href="https://github.com/amdPeek">@GitHub</a></div>
    </div>
    </center>
 
    <div class="content" class="text">
 
-      <h3>A simple doom replica</h3>
+      <h3>The 2048 game</h3>
       
       <div id="avatar">
-        <center><img style="width:80%;" src="doom.png"/></center>
+        <center><img style="width:80%;" src="../images/stable.png"/></center>
          
          <p>Screenshot from the game</p>
       </div>
 
-      <p>This game has been made with C++ and the OpenGL library for the graphic rendering.</p>
+      <p>This game has been made with C++ and the SFML library for the graphic rendering.</p>
 
-      <p>It was a project for school. We had and OOP advanced course for C++, and it was a way to learn about
-         polymorphism, data encapsulation, memory dynamic allocation et 3D rendering.
+      <p>It's just a basic copy of the original 2048 game but I have ideas of improvment like
+        building an IA or making better graphics (isometric view and shader with GLSL).
       </p>
 
 
    </div>
 
    <div id="copyright">
-      <p>Copyright (C) Manea Théo - 2022 <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
-         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>  </p>
+      <p>Copyright (C) Manea Théo - <span id="year"></span> <p>Date/Time: <span id="datetime"></span></p>
+      <script>
+         var dt = new Date();
+         document.getElementById("datetime").innerHTML=dt.toLocaleString(); 
+         var currentYear = dt.getFullYear();
+         document.getElementById("year").innerHTML=currentYear; 
+      </script>  
+      </p>
    </div>
 
   
