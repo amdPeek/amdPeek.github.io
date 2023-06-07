@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01//EN' 'http://www.w3.org/TR/html4/strict.dtd'>
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <style>body {
+        background: #999999;
+        margin: 10px;
+        padding: 10px;
+     
+        font-family: Verdana, sans-serif;
+        width: 780px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     
+     .content {
+        margin: 5px;
+        padding: 10px;
+        background: #eeeeee;
+        border: 2px solid #ccccff;
+     }
+     
+     #title {
+        padding-left: 20px;
+     }
+     
+     #sub_title {
+        padding-right: 10px;
+        text-align: right;
+     }
+     
+     #navigation {
+        padding-left: 5%;
+        padding-right: 5%;
+     }
+     
+     #inner_navi {
+     }
+     
+     .navi_elem {
+        display: inline-table;
+        border: 1px black solid;
+        padding: 5px;
+        margin-right: 10px;
+        background: #eeeeff;
+        width: 10%;
+        text-align: center;
+     }
+     
+     hr {
+        color: black;
+     }
+     
+     hr.text {
+        color: white;
+     }
+     
+     a:link {
+        color: blue;
+     }
+     
+     a:hover {
+        color: purple;
+     }
+     
+     a:visited {
+        color: purple;
+     }
+     
+     a {
+        text-decoration: none;
+     }
+     
+     #avatar {
+        float: right;
+        margin: 15px;
+        font-size: 0.7em;
+        text-align: right;
+     }
+     
+     #copyright {
+        font-size: 0.8em;
+        background: #eeeeee;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        border: 2px solid #ccccff;
+        margin: 5px;
+        text-align: right;
+     }</style>
+      <title>Théo Manea</title>
+   </head>
+
+   <body>
+
+   <div class="content" id="title">
+      <h1>2048</h1>
+      <div id="sub_title">
+         <h4>//articles</h4>
+      </div>
+      <hr/>
+   </div>
+
+   <center>
+	<div class="content" id="navigation">
+      <div class="navi_elem"><a href="index.html">News</a></div>
+      <div class="navi_elem"><a href="about.html">About</a></div>
+      <div class="navi_elem"><a href="https://github.com/TheoManea">@GitHub</a></div>
+   </div>
+   </center>
+
+   <div class="content" class="text">
+
+      <h3>The 2048 game</h3>
+      
+      <div id="avatar">
+        <center><img style="width:80%;" src="stable.png"/></center>
+         
+         <p>Screenshot from the game</p>
+      </div>
+
+      <p>This game has been made with C++ and the SFML library for the graphic rendering.</p>
+
+      <p>It's just a basic copy of the original 2048 game but I have ideas of improvment like
+        building an IA or making better graphics (isometric view and shader with GLSL).
+      </p>
+
+
+   </div>
+
+   <div id="copyright">
+      <p>Copyright (C) Manea Théo - 2022 <p>Date/Time: <span id="datetime"></span></p><script>var dt = new Date();
+         document.getElementById("datetime").innerHTML=dt.toLocaleString();</script>  </p>
+   </div>
+
+  
+
+   </body>
+</html>
